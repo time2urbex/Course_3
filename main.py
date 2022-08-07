@@ -6,11 +6,14 @@ from flask import Blueprint, render_template, request, Flask, jsonify
 from utils import get_posts_all, get_comments_all, get_posts_by_user, get_comments_by_post_id, search_for_posts, get_post_by_pk, test_zero, get_bookmarks_all, get_bookmarks_by_user
 
 app = Flask(__name__)
+
 logging.basicConfig(filename="logs/api.log", filemode='a', format="%(asctime)s [%(levelname)s] %(message)s", level = logging.INFO)
 
 #logging.ERROR
 
 # Создаем роут главной страницы
+
+app.config["JSON_AS_ASCII"] = False
 
 
 @app.route('/')
@@ -94,10 +97,6 @@ def all_bookmarks_by_user(bookmark_number):
     return render_template('bookmarks.html', total_bookmarks=total_bookmarks, bookmark_number=bookmark_number)
 
 
+if __name__ == "__main__":
 
-
-# ### Шаг 7 – залогируйте обращения к эндпоинтам API
-# Используйте стандартный logging, логи должны храниться в папке logs в файле `api.log` . Формат логов должен быть таким:
-
-app.config ["JSON_AS_ASCII"] = False
-app.run(port=1001, debug=True)
+    app.run(port=5000, debug=True)

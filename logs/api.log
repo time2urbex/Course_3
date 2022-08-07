@@ -245,3 +245,27 @@ INFO:werkzeug: * Debugger PIN: 985-962-052
 2022-08-06 00:52:41,786 [INFO] 127.0.0.1 - - [06/Aug/2022 00:52:41] "[33mGET /posts/static/img/bookmark.png HTTP/1.1[0m" 404 -
 2022-08-06 00:52:41,894 [INFO] 127.0.0.1 - - [06/Aug/2022 00:52:41] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
 2022-08-06 00:52:41,899 [INFO] 127.0.0.1 - - [06/Aug/2022 00:52:41] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-08-07 15:47:11,558 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:48:07,142 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:49:08,887 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:50:08,036 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:08] "GET / HTTP/1.1" 200 -
+2022-08-07 15:50:08,153 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:08] "GET /static/css/styles.min.css HTTP/1.1" 200 -
+2022-08-07 15:50:08,154 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:08] "GET /static/img/bookmark.png HTTP/1.1" 200 -
+2022-08-07 15:50:08,158 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:08] "GET /static/img/eye.png HTTP/1.1" 200 -
+2022-08-07 15:50:21,462 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:50:23,047 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:23] "[32mGET /search?s= HTTP/1.1[0m" 308 -
+2022-08-07 15:50:23,051 [INFO] Выполняю поиск
+2022-08-07 15:50:23,056 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:23] "GET /search/?s= HTTP/1.1" 200 -
+2022-08-07 15:50:23,140 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:23] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-08-07 15:50:23,152 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:23] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-08-07 15:50:23,154 [INFO] 127.0.0.1 - - [07/Aug/2022 15:50:23] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-08-07 15:50:47,576 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:50:58,300 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:51:41,215 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:52:06,493 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:53:05,052 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:55:48,433 [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-07 15:55:55,442 [INFO] 127.0.0.1 - - [07/Aug/2022 15:55:55] "GET / HTTP/1.1" 200 -
+2022-08-07 15:55:55,538 [INFO] 127.0.0.1 - - [07/Aug/2022 15:55:55] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-08-07 15:55:55,542 [INFO] 127.0.0.1 - - [07/Aug/2022 15:55:55] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-08-07 15:55:55,546 [INFO] 127.0.0.1 - - [07/Aug/2022 15:55:55] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
