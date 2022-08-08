@@ -35,15 +35,16 @@
                     <span class="item__username"> {{ post["poster_name"] }}    </span>
                 </a>
                 <button type="button" class="item__bookmark-btn">
-                    <img src="static/img/bookmark.png" alt="" class="item__bookmark-icon" width="24">
-                </button>
+                    <a href="/bookmarks/add/{{ post['pk'] }}" class="item__post-link">
+                        <img src="static/img/bookmark.png" alt="" class="item__bookmark-icon" width="24">
+                    </a></button>
             </div>
             <a href="" class="item__post-link">
                 <img src=" {{ post['pic'] }}" alt="" width="348" class="item__post-img">
             </a>
             <div class="item__descr">
 
-                <p class="item__text"> {{ post["content"] }} </p>
+                <p class="item__text"> {{ post["content"] |safe }} </p>
             </div>
             <div class="item__bottom">
                 <div class="item__post-info">
@@ -55,16 +56,21 @@
                 </div>
                 <div class="item__comments">
                     {% for comment in comments %}
-                    <p class="item__comment">
-                        <b> {{ comment["commenter_name"] }} : </b> {{ comment["comment"] }}
-                    </p>
+                        <p class="item__comment">
+                            <b> {{ comment["commenter_name"] }} : </b> {{ comment["comment"] }}
+                        </p>
 
                     {% endfor %}
-                    <br><hr><br>
-                    <form action="/post" method="POST" enctype="multipart/form-data">
+                    <br>
+                    <hr>
+                    <br>
+                    <form action="/add_comment/{{ post['pk'] }}" method="POST" enctype="multipart/form-data">
 
-                        <p>Текст комментария</p>
+
                         <div>
+                                                    <p>Имя комментатора</p>
+                            <textarea name="user_name" rows="1"></textarea>
+                                                    <p>Текст комментария</p>
                             <textarea name="content" rows="3"></textarea>
                         </div>
                         <div>
