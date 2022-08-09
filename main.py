@@ -10,6 +10,7 @@ app = Flask(__name__)
 # Добавляем логировани в файл api.log
 
 
+
 logging.basicConfig(filename="logs/api.log", filemode='a', format="%(asctime)s [%(levelname)s] %(message)s", level = logging.INFO)
 
 #logging.ERROR
